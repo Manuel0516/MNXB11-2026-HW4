@@ -29,10 +29,14 @@ int factorial(int n) {
         return 1;
     }
 
-    for (int i = n-1; i > 0; i--) {
+    return n*factorial(n - 1);
+
+    /* Solution with for loop */
+    
+    /*for (int i = n-1; i > 0; i--) {
         n *= i;
     }
-    return n;
+    return n; */
  }
 
 }; // namespace homework
