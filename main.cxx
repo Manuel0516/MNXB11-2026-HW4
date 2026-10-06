@@ -4,6 +4,7 @@
  * */
 
 #include "as1.hpp"
+#include "as2.hpp"
 #include <iostream>
 
 int main() { 
@@ -31,5 +32,20 @@ int main() {
   int factorialInput = 5;
   int factorialResult = homework::factorial(factorialInput);
   std::cout << "Factorial of " << factorialInput << " is: " << factorialResult << std::endl;
-}
 
+
+  // Exercise 2.1
+  homework::Foo foo;
+  std::cout << "Foo::bar() returns: " << foo.bar() << std::endl;
+
+  std::cout << "Foo::baz() returns: " << foo.baz() << " and sets x to: " << foo.x << std::endl;
+  std::cout << "Foo::quux() returns: " << foo.quux()[0] << foo.quux()[1] << foo.quux()[2] << std::endl;
+
+  // Exercise 2.2
+  homework::fVector2D v1(1.0, 2.0);
+  homework::fVector2D v2(3.0, 4.0);
+  homework::fVector2D v3 = v1 + v2;
+
+  std::cout << "Is sum corret? " << std::boolalpha << (v3 == homework::fVector2D(4.0, 6.0)) << std::endl;
+
+}
