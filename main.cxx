@@ -5,6 +5,7 @@
 
 #include "as1.hpp"
 #include "as2.hpp"
+#include "as3.hpp"
 #include <iostream>
 
 int main() { 
@@ -48,4 +49,8 @@ int main() {
 
   std::cout << "Is sum corret? " << std::boolalpha << (v3 == homework::fVector2D(4.0, 6.0)) << std::endl;
 
+  // Exercise 3.1
+  homework::Apple apple(homework::Color::red);
+  std::cout << apple.getName() << '\n';  // apple
+  std::cout << apple.getTaste() << '\n'; // sweet
 }
